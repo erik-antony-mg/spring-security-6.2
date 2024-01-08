@@ -44,6 +44,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth ->
                         auth.requestMatchers("/api/hola").permitAll()
                                 .requestMatchers("/api/usuarios").permitAll()
+                                .requestMatchers("/api/createUser").permitAll()
                                 //para swagger
                                 .requestMatchers(AUTH_SWAGER).permitAll()
 //                                .requestMatchers("/test/admin").hasRole("ADMIN")
